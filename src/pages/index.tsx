@@ -5,7 +5,7 @@ export default function Home() {
   return null;
 }
 
-export const getServerSideProps: GetServerSideProps = async({ req, res }) => {
+export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const session = getSession(req, res);
 
   if (session) {
